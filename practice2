@@ -1,0 +1,401 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "74b0175e-8fc8-40a7-b156-889df922a1c2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5, 6, 7, 8}\n",
+      "<class 'set'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1={1,2,3,4,5,6,7,8}\n",
+    "print(s1)\n",
+    "print(type(s1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "698eaee6-04e6-4c40-aee5-acccb6a4cef4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5, 6, 7, 8}\n",
+      "<class 'set'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "lst1=[1,8,7,6,5,4,3,2]\n",
+    "s2=set(lst1)\n",
+    "print(s2)\n",
+    "print(type(s2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "5b991624-1700-4621-b2f7-44c5239c215f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 4, 5, 6, 7, 8}"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "##union operation using / operator\n",
+    "s1 = {8,7,6,5}\n",
+    "s2 = {4,3,2,1}\n",
+    "s1|s2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "a99ef1f3-66f2-4ee7-a3d0-ea6dd5900ac6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "set()"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#Intersection using & operator\n",
+    "s5 = {4,3,2,1}\n",
+    "s6 = {8,7,6,5}\n",
+    "s5 & s6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "fdabd2c9-8dbd-41cc-8f75-314e49c62bdd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{4, 5, 6}"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#difference of two sets\n",
+    "s3={6,5,4,3}\n",
+    "s4={3,2,1}\n",
+    "s3 - s4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "39f74e90-4ff9-4a97-9f1a-b57774dadbbb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2}"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s4-s3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "f175c154-58f3-4a4b-a848-f9eefb2cb9da",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1, 2, 3, 6, 7, 8}"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "##symetric difference\n",
+    "s1={8,7,6,5,4}\n",
+    "s2={1,2,3,4,5}\n",
+    "s1.symmetric_difference(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "418f0c41-fe13-4310-afa4-88a761c44fed",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "s1={1,2,3,4,5}\n",
+    "s2={1,2,3}\n",
+    "s2.issubset(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "71f69023-ab86-4f46-ac9c-92fc082937df",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "welcome to gamma class\n",
+      "we started with python\n"
+     ]
+    }
+   ],
+   "source": [
+    "str1=\"welcome to gamma class\"\n",
+    "print(str1)\n",
+    "str2=\"we started with python\"\n",
+    "print(str2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "d1924c4d-501d-4727-91af-dbc5b93e763e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n",
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type (str1))\n",
+    "print(type (str2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "8c60ccbf-e5e6-41d1-991c-22107511ac70",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "welcome to gamma class\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'me to'"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#slicing\n",
+    "print(str1)\n",
+    "str1[5:10]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "0e6c4a46-6ab1-435b-bca9-c6b97ca7cdbc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "welcome to gamma class\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "['welcome', 'to', 'gamma', 'class']"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#split\n",
+    "print(str1)\n",
+    "str1.split()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "4b7f138f-b5de-42af-afd5-ab5a56898503",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'The product is awesome;great,service'"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#join()\n",
+    "reviews=[\"The product is awesome\",\"great,service\"]\n",
+    "joined_string=';'.join(reviews)\n",
+    "joined_string"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5b1aef4f-2f46-4173-82a2-c839ed96ac8e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sales_data = {\n",
+    "    \"ProductID\":[101,102,103,104,105,106]\n",
+    "    \"ProductName\":[\"Laptop\",\"Mouse\",\"Desk\",\"Keyboard\",\"printer\"]\n",
+    "    \"Category\": [\"Furniyure,Accessories,Electronics]\n",
+    "    \"PriceRange\":[\"high\",\"low\",\"medium\"]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "dd4aba6c-2f09-4a11-ac12-31c6fca25852",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ram\n",
+      "shyam\n",
+      "Raju\n"
+     ]
+    }
+   ],
+   "source": [
+    "d1={\"Ram\":180,\"shyam\":160,\"Raju\":140}\n",
+    "for k in d1.keys():\n",
+    "    print(k)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "e3e9d825-9fcb-4088-a0b9-f8b6add4614b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ram\n",
+      "shyam\n",
+      "Raju\n",
+      "john\n"
+     ]
+    }
+   ],
+   "source": [
+    "d1={\"Ram\":180,\"shyam\":160,\"Raju\":140,\"john\":120}\n",
+    "for k in d1.keys():\n",
+    "    print(k)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c130e935-b604-4734-8738-d8b53e0b4475",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
