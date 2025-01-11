@@ -1,0 +1,203 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "41730442-5c3f-4cd2-9973-388c698f527e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Import pandas\n",
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "8ac387f5-5a3b-4575-bd24-0447b830f9b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0    10\n",
+      "1    20\n",
+      "2    30\n",
+      "3    40\n",
+      "dtype: int64\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Create panda series using list\n",
+    "data = [10,20,30,40]\n",
+    "series = pd.Series(data)\n",
+    "print(series)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "2f8b9605-6acd-41dc-8327-d5187aa6b658",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "A    1\n",
+      "B    2\n",
+      "C    3\n",
+      "D    4\n",
+      "dtype: int64\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Create padas series using a custom index\n",
+    "data = [1, 2, 3, 4]\n",
+    "i = ['A', 'B', 'C', 'D']\n",
+    "series = pd.Series(data, index=i)\n",
+    "print(series)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "9a8c46c4-381e-427f-9304-72176dcedcb3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "a    10\n",
+      "b    20\n",
+      "c    30\n",
+      "dtype: int64\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Create series esing dictionary\n",
+    "data = {'a': 10, 'b': 20, 'c':30}\n",
+    "series = pd.Series(data)\n",
+    "print(series)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "c6676c11-ec16-4e7a-bd9c-10ade6e93b2f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "a    10\n",
+       "b    40\n",
+       "c    30\n",
+       "dtype: int64"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "series.replace(20,40)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "c3298ede-08e1-4a5f-ae23-c1c8f34582e0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "    Name  Age Country\n",
+      "0  Alice   25     USA\n",
+      "1    Bob   30      UK\n",
+      "2   Mary   34     AUS\n"
+     ]
+    }
+   ],
+   "source": [
+    "data = {'Name':['Alice', 'Bob', 'Mary'], 'Age': [25, 30, 34],'Country':[\"USA\",\"UK\",\"AUS\"]}\n",
+    "df = pd.DataFrame(data)\n",
+    "print(df)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "ad297df2-aa12-42a3-a1bc-976a1cc5f38b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1 2 3]\n",
+      " [4 5 6]\n",
+      " [7 8 9]]\n",
+      "   A  B   C\n",
+      "0  1  2   3\n",
+      "1  4  5   6\n",
+      "2  7  8   9\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Create pandas dataframe from numpy array\n",
+    "import numpy as np\n",
+    "array = np.array([[1, 2, 3], [4, 5, 6],[7, 8, 9]])\n",
+    "print(array)\n",
+    "df = pd.DataFrame(array, columns=['A', 'B',' C'])\n",
+    "print(df)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "56b12027-94e7-47fe-b33e-fe3e78dbe926",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2021755f-849b-4300-8de4-b08ec191ed9e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
